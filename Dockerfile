@@ -1,8 +1,7 @@
-# Use an official OpenJDK runtime as a parent image
-FROM eclipse-temurin:8-jre-alpine
+# Use Java 17 LTS - actively maintained
+FROM eclipse-temurin:17-jre-alpine
 
-# set shell to bash
-# source: https://stackoverflow.com/a/40944512/3128926
+# Set shell to bash
 RUN apk update && apk add bash
 
 # Set the working directory to /app
